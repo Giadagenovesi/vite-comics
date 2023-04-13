@@ -7,7 +7,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <h2> Main</h2>
+            <h2> --> Content goes here &lt;-- </h2>
         </div>
     </main>
     
@@ -15,10 +15,11 @@ export default {
 
 <style scoped lang="scss">
 main {
-    background-color: black;
+    background-color: #1C1C1C;
+    padding: 3rem 0;
 
     h2 {
-    color: white;
+        color: white;
 }
 }
 

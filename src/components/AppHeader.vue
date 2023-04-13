@@ -100,9 +100,6 @@ header {
                 border-bottom: 4px solid blue;
             }
         }
-
-
     }
-
 }
 </style>
