@@ -59,7 +59,29 @@ export default {
             </div>
         </div>
         <div class="footer-bottom">
-
+            <div class="container">
+                <div class="sign-btn">
+                    <a href="">SIGN-UP NOW!</a>
+                </div>
+                <nav class="socials">
+                    <h3>FOLLOW US</h3>
+                    <a href="">
+                        <img src="../assets/img/footer-facebook.png" alt="fb lobo">
+                    </a>
+                    <a href="">
+                        <img src="../assets/img/footer-twitter.png" alt="fb lobo">
+                    </a>
+                    <a href="">
+                        <img src="../assets/img/footer-youtube.png" alt="fb lobo">
+                    </a>
+                    <a href="">
+                        <img src="../assets/img/footer-pinterest.png" alt="fb lobo">
+                    </a>
+                    <a href="">
+                        <img src="../assets/img/footer-periscope.png" alt="fb lobo">
+                    </a>
+                </nav>
+            </div>
         </div>
         
     </footer>
@@ -108,9 +130,35 @@ footer {
         padding: 1rem 0;
     }
     .footer-bottom {
-        height: 80px;
+        height: 100px;
         background-color: #303030;
-        padding: 1.5rem 0; 
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        
+        .sign-btn {
+            padding: 1rem .6rem;
+            border: 3px solid #0282F9;
+            
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+        h3 {
+            color: #0282F9;
+            margin-right: 1rem;
+        }
+        
+        .socials {
+            display: flex;
+            align-items: center;
+
+            a {
+                width: 28px;
+                margin: 0 .3rem;
+            }
+        }
     }
 }
 </style>
