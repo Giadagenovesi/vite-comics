@@ -8,28 +8,30 @@ export default {
     <footer>
         <div class="footer-top">
             <div class="container">
-                <ul class="shop-links">
-                    <li>
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="dc logo bg">
-                        <p>DIGITAL COMICS</p>  
-                    </li>
-                    <li>
-                        <img src="../assets/img/buy-comics-merchandise.png" alt="dc logo bg">
-                        <p>DIGITAL COMICS</p>  
-                    </li>
-                    <li>
-                        <img src="../assets/img/buy-comics-subscriptions.png" alt="dc logo bg">
-                        <p>DIGITAL COMICS</p>  
-                    </li>
-                    <li>
-                        <img src="../assets/img/buy-comics-shop-locator.png" alt="dc logo bg">
-                        <p>DIGITAL COMICS</p>  
-                    </li>
-                    <li>
-                        <img src="../assets/img/buy-dc-power-visa.svg" alt="dc logo bg">
-                        <p>DIGITAL COMICS</p>  
-                    </li>
-                </ul>
+                <div class="shop-links">
+                    <ul>
+                        <li>
+                            <img src="../assets/img/buy-comics-digital-comics.png" alt="dc logo bg">
+                            <p>DIGITAL COMICS</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/buy-comics-merchandise.png" alt="dc logo bg">
+                            <p>DIGITAL COMICS</p>  
+                        </li>
+                        <li>
+                            <img src="../assets/img/buy-comics-subscriptions.png" alt="dc logo bg">
+                            <p>DIGITAL COMICS</p>  
+                        </li>
+                        <li>
+                            <img src="../assets/img/buy-comics-shop-locator.png" alt="dc logo bg">
+                            <p>DIGITAL COMICS</p>  
+                        </li>
+                        <li>
+                            <img src="../assets/img/buy-dc-power-visa.svg" alt="dc logo bg">
+                            <p>DIGITAL COMICS</p>  
+                        </li>
+                    </ul>    
+                </div>
             </div>     
         </div>
         
@@ -122,6 +124,7 @@ footer {
 
     .footer-top {
         background-color: #0282F9;
+        padding: 2rem 0
 
     }
     .container {
@@ -131,18 +134,25 @@ footer {
         .shop-links {
             display: flex;
             color: white;
+            padding-left: 2rem;
 
-            .shop-links ul {
-                list-style-type: none;
+            ul {
                 display: flex;
+                list-style-type: none;
+
 
                 li {
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: space-around;
 
                     img {
-                        width: 10px;
+                        width: 40px;
+                        margin:0  10px;
+                    }
+                    p {
+                        margin-right: 30px;
+                        font-size: .8rem;
                     }
                 }
             }
@@ -172,7 +182,7 @@ footer {
             }
         }
         .footer-bg {
-            width: 450px;
+            width: 400px;
         }
     }
    
