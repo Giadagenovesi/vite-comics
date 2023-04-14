@@ -8,6 +8,33 @@ export default {
     <footer>
         <div class="footer-top">
             <div class="container">
+                <ul class="shop-links">
+                    <li>
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt="dc logo bg">
+                        <p>DIGITAL COMICS</p>  
+                    </li>
+                    <li>
+                        <img src="../assets/img/buy-comics-merchandise.png" alt="dc logo bg">
+                        <p>DIGITAL COMICS</p>  
+                    </li>
+                    <li>
+                        <img src="../assets/img/buy-comics-subscriptions.png" alt="dc logo bg">
+                        <p>DIGITAL COMICS</p>  
+                    </li>
+                    <li>
+                        <img src="../assets/img/buy-comics-shop-locator.png" alt="dc logo bg">
+                        <p>DIGITAL COMICS</p>  
+                    </li>
+                    <li>
+                        <img src="../assets/img/buy-dc-power-visa.svg" alt="dc logo bg">
+                        <p>DIGITAL COMICS</p>  
+                    </li>
+                </ul>
+            </div>     
+        </div>
+        
+        <div class="main-footer">
+            <div class="container">
                 <div class="footer-menu">
                     <div class="left">
                         <h3> DC COMICS</h3>
@@ -66,24 +93,23 @@ export default {
                 <nav class="socials">
                     <h3>FOLLOW US</h3>
                     <a href="">
-                        <img src="../assets/img/footer-facebook.png" alt="fb lobo">
+                        <img src="../assets/img/footer-facebook.png" alt="fb logo">
                     </a>
                     <a href="">
-                        <img src="../assets/img/footer-twitter.png" alt="fb lobo">
+                        <img src="../assets/img/footer-twitter.png" alt="twitter logo">
                     </a>
                     <a href="">
-                        <img src="../assets/img/footer-youtube.png" alt="fb lobo">
+                        <img src="../assets/img/footer-youtube.png" alt="youtube logo">
                     </a>
                     <a href="">
-                        <img src="../assets/img/footer-pinterest.png" alt="fb lobo">
+                        <img src="../assets/img/footer-pinterest.png" alt="pinterest logo">
                     </a>
                     <a href="">
-                        <img src="../assets/img/footer-periscope.png" alt="fb lobo">
+                        <img src="../assets/img/footer-periscope.png" alt="location logo">
                     </a>
                 </nav>
             </div>
         </div>
-        
     </footer>
 </template>
 
@@ -94,8 +120,33 @@ footer {
     background-size: cover;
     background-image: url(../assets/img/footer-bg.jpg);
 
+    .footer-top {
+        background-color: #0282F9;
+
+    }
     .container {
         @include flex (row, space-between, center);
+        
+
+        .shop-links {
+            display: flex;
+            color: white;
+
+            .shop-links ul {
+                list-style-type: none;
+                display: flex;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    img {
+                        width: 10px;
+                    }
+                }
+            }
+        }
         .footer-menu {
             width: 40%;
             align-self: flex-start;
@@ -121,15 +172,12 @@ footer {
             }
         }
         .footer-bg {
-            width: 400px;
+            width: 450px;
         }
-
-
     }
-    .footer-top {
-        padding: 1rem 0;
-    }
+   
     .footer-bottom {
+        width: 100%;
         height: 100px;
         background-color: #303030;
         padding: 1.5rem 0;
